@@ -1,157 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-    <!--=============== REMIXICONS ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <title>Internet Friends</title>
+    <title>Accuities - Staffing Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="" class="nav__logo">Internet Friends</a>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Accuities Staffing Calculator</h1>
+            <p>Prototype based on standard medical institute digital workflows</p>
+        </header>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Home</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="" class="nav__link">About</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Featured</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="" class="nav__link">New</a>
-                    </li>
-                </ul>
-
-                <div class="nav__social">
-                    <a href="https://www.facebook.com" target="blank" class="nav__social-link">
-                        <i class="ri-facebook-circle-line"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com" target="blank" class="nav__social-link">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-
-                    <a href="https://twitter.com" target="blank" class="nav__social-link">
-                        <i class="ri-twitter-x-line"></i>
-                    </a>
-
-                </div>
-
-                <!--Close Button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
-
-            </div>
-
-            <!-- Toggle Button-->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-fill"></i>
-            </div>
-
-        </nav>
-    </header>
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home">
-            <div class="home__container container">
-                <div class="home__data">
-                    <div class="home__content">
-                        <div class="home__stars">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                        </div>
-                    </div>
-
-                    <h1 class="home__title">Real-Style Range
-                        <br> Digital Connections
-                        <br> Finally Materialised</h1>
-                    <h3 class="home__price">R(TBD)</h3>
-                </div>
-
-                <a href="#" class="home__button">
-                    <i class="ri-arrow-right-s-line"></i>
-                </a>
-
-                <div class="home__images">
-                    <div class="home__swiper swiper">
-                        <div class="swiper-wrapper">
-                            <article class="home__article swiper-slide">
-                                <img src="assets/img/Gemini_Image1.png" alt="image" class="home__img">
-                            </article>
-
-                            <article class="home__article swiper-slide">
-                                <img src="assets/img/Gemini_Image2.png" alt="image" class="home__img">
-                            </article>
-
-                            <article class="home__article swiper-slide">
-                                <img src="assets/img/Gemini_Image3.png" alt="image" class="home__img">
-                            </article>
-                        </div>
-                    </div>
-
-                    <!-- If we need pagination-->
-                    <div class="swiper-pagination">
-
-                    </div>
-                </div>
-
-                <div class="home__info">
-                    <img src="assets/img/Gemini_Generated.png" alt="image" class="home__info-img">
-
-                    <div class="home__info-content">
-                        <p class="home__info-description">
-                            When you wear Internet Friends, you’re not just dressing for yourself; you’re
-stepping into a global community. A network that celebrates individuality while
-honoring the ties that bring us together.
-                        </p>
-
-                        <a href="#" class="home__button-link">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!--=============== GSAP ===============-->
-    <script src="assets/js/gsap.min.js"></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+        <main id="wards-container">
+            <!-- Wards will be dynamically injected here by script.js -->
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
-
-
 </html>
-
-

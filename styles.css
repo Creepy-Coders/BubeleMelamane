@@ -1,0 +1,115 @@
+:root {
+    --teal: #007676;
+    --light-blue: #d6e3f3;
+    --green: #a9d08e;
+    --yellow: #ffc000;
+    --border-color: #000000;
+    --bg-color: #f5f7fa;
+    --font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.app-header h1 {
+    margin: 0 0 0.5rem 0;
+    color: var(--teal);
+}
+
+.app-header p {
+    margin: 0;
+    color: #666;
+}
+
+.ward-section {
+    margin-bottom: 2rem;
+    overflow-x: auto;
+}
+
+table.ward-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--border-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.ward-table th, .ward-table td {
+    border: 1px solid var(--border-color);
+    padding: 8px 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ward-table th {
+    background-color: var(--teal);
+    color: white;
+    font-weight: 700;
+}
+
+/* Specific Cell Colors */
+.ward-table td {
+    background-color: var(--light-blue);
+}
+
+.ward-table td.input-green {
+    background-color: var(--green);
+}
+
+.ward-table tr.total-row td {
+    background-color: var(--yellow);
+}
+
+.ward-table .ward-name {
+    background-color: var(--light-blue);
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Inputs styling */
+input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-align: center;
+    color: inherit;
+    padding: 4px;
+}
+
+input:focus {
+    outline: 1px solid #333;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
